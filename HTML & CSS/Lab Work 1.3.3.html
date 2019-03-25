@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ <form action="/" method="get" >
+User:<br>
+<input type="email" name="email">
+<br>
+Password:<br>
+<input type="Password" name="Password">
+ <br>
+  <input type="submit">
+</form>
+<form action="/update" method="post">
+  <textarea name="message" style="width:300px; height:400px;">Comments</textarea>
+  <br>
+  <input type="submit">
+</form>
+ <form action="/datalist" method="get">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Present">
+    <option value="Past">
+    <option value="Future">
+  </datalist>
+  <input type="submit">
+</form>
+<form action="/option" method="post">
+  <select name="cities" size="3" multiple>
+    <option value="1">Paris</option>
+    <option value="2">New York</option>
+    <option value="3">Batumi</option>
+  </select>
+  <br><br>
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</form>
+
+
+</body>
+</html>
+          
